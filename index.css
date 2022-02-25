@@ -65,8 +65,8 @@ a {
 .navBtn {
   display: flex;
   flex-direction: row;
-  justify-self: center;
-  padding: 10px 16px;
+  justify-content: center;
+  padding: 10px 10px;
   width: 150px;
   height: 40px;
   border: 1px solid #d0d5dd;
