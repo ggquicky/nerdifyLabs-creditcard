@@ -196,6 +196,7 @@ a {
 }
 
 .section2Dashboard {
+  width: 100%;
   display: grid;
   grid-template-columns: 120px 334px 70px;
   grid-template-rows: 36px 48px 40px;
@@ -206,7 +207,7 @@ a {
   align-items: center;
   padding: 24px;
   column-gap: 10px;
-
+justify-content: space-between;
   background: #ffffff;
   /* Gray/200 */
   border: 1px solid #eaecf0;
@@ -339,7 +340,12 @@ a {
     0px 1px 2px rgba(16, 24, 40, 0.06);
   border-radius: 8px;
 }
-
+.balanceOTHeader{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
 .balanceOTChart {
   font-family: Inter;
   font-style: normal;
@@ -394,6 +400,10 @@ a {
   /* Gray/900 */
   color: #101828;
   padding: 24px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
 }
 .yourCardsContainer {
   display: flex;
@@ -450,7 +460,7 @@ a {
 
 .format {
   display: grid;
-  grid-template-columns: auto auto 30%;
+  grid-template-columns: 40% 30% 30%;
   grid-template-rows: 70% auto;
   grid-template-areas:
     "cardHeader . logoContact"
@@ -518,7 +528,7 @@ a {
   position: relative;
   background: #f9f5ff;
   border-radius: 4px;
-  width: 302px;
+  width: auto;
   height: 8px;
 }
 .barPurple {
@@ -739,7 +749,7 @@ a {
 
   .section3 {
     display: grid;
-    grid-template-columns: 440px;
+    grid-template-columns: 100%;
     grid-template-rows: auto;
     grid-template-areas:
       "balanceOverTime"
@@ -813,19 +823,21 @@ a {
   }
   .section2Dashboard {
     display: grid;
-    grid-template-columns: 120px 350px 70px;
+    width: 100%;
+    grid-template-columns: 120px auto 70px;
     grid-template-rows: 36px 48px 40px;
     grid-template-areas:
       "donutChart donutChartHeader donutChartMenu"
       "donutChart donutChartText ."
       "donutChart donutChartAmount donutChartPercent";
     align-items: center;
+    justify-content: space-between;
     padding: 24px;
     column-gap: 10px;
   }
   .section3 {
     display: grid;
-    grid-template-columns: 744px;
+    grid-template-columns: 100%;
     grid-template-rows: auto;
     grid-template-areas:
       "balanceOverTime"
@@ -860,9 +872,13 @@ a {
   padding: 16px 50px;
   column-gap: 0px;
 }
+.navBarLeft{
+  column-gap: 0px;
+}
 
 .section2Dashboard {
   display: grid;
+  width: 100%;
   grid-template-columns: 120px auto 70px;
   grid-template-rows: 36px 48px 40px;
   grid-template-areas:
@@ -870,13 +886,14 @@ a {
     "donutChart donutChartText ."
     "donutChart donutChartAmount donutChartPercent";
   align-items: center;
+  justify-content: space-between;
   padding: 24px;
   column-gap: 10px;
 }
 
-/* .donutChartAmount{
-  width: min(200px) ;
-} */
+.section2{
+  justify-content: space-between;
+}
 
 .shadowCard{
   display: none;
